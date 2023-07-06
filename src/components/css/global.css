@@ -1,0 +1,57 @@
+.mainWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainWrapper .mainForm {
+  margin-top: 5em;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1em;
+}
+.mainWrapper .mainForm .formHeader {
+  margin-left: 8.2em;
+}
+.mainWrapper .mainForm ::-moz-placeholder {
+  text-align: center;
+}
+.mainWrapper .mainForm ::placeholder {
+  text-align: center;
+}
+.mainWrapper .mainForm input {
+  margin-left: 12em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  width: 15vw;
+  border-color: #201337;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.mainWrapper .mainForm .toCalc {
+  font-weight: bolder;
+  border-color: #201337;
+  padding-top: 0.1em;
+  margin-left: 12.5em;
+  cursor: pointer;
+}
+.mainWrapper .mainForm .underCalc {
+  margin-top: 3em;
+  margin-left: 8.2em;
+  border-style: solid;
+  border-width: 1.2px;
+  width: 20vw;
+}
+.mainWrapper .mainForm .showResult {
+  translate: 9em 3em 0em;
+}
+
+body {
+  background-color: #201337;
+}/*# sourceMappingURL=global.css.map */
