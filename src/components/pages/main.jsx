@@ -3,8 +3,18 @@ import "../css/global.css";
 import { useState } from "react";
 import Test from "./test";
 import Test2 from "./test1";
+
+export function toBeCalc() {
+  try {
+    return "Your calculation result here";
+    //your calculation here function here
+  } catch (e) {
+    console.log("Error: " + e);
+    return e;
+  }
+}
 export default function Main() {
-  //onst [pages, setpages] = useState(0);
+  //const [pages, setpages] = useState(0);
   function renderSwitch(pages) {
     switch (pages) {
       case 0:
@@ -17,8 +27,8 @@ export default function Main() {
     }
   }
   const [numbers, setNumbers] = useState([0, 0]);
-  function toCalc(){
-    let n = numbers[0]+numbers[1]
+  function toCalc() {
+    let n = numbers[0] + numbers[1];
     return n;
   }
 
@@ -33,19 +43,21 @@ export default function Main() {
         <form className="mainForm" action="">
           <h2 className="formHeader">Base 2 to 10</h2>
           <input
-          placeholder="first field"
+            placeholder="first field"
             type="number"
             value={numbers[0] || ""}
             onChange={(e) => handleNumberChange(0, parseInt(e.target.value))}
           />
           <input
-          placeholder="seconds field"
+            placeholder="seconds field"
             type="number"
             value={numbers[1] || ""}
             onChange={(e) => handleNumberChange(1, parseInt(e.target.value))}
           />
-          <div className="toCalc"><h1>Calculate</h1></div>
-          <div className="showResult">{toCalc()}</div>
+          <div className="toCalc">
+            <h1>Calculate</h1>
+          </div>
+          <div className="showResult">{toBeCalc()}</div>
           <i className="underCalc"></i>
         </form>
         {/* <div className="mainHeroRender">
