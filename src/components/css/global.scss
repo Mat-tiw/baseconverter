@@ -1,55 +1,44 @@
-.mainWrapper{
-    margin: 0;
-    padding: 0;
+.mainWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mainForm {
+    margin-top: 5em;
+    width: 55vw;    
+    height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    .mainForm{
-        margin-top: 5em;
-        width: 40vw;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 1em;
-        .formHeader{
-            margin-left: 8.2em ;
-        }
-        ::placeholder{
-            text-align: center;
-        }
-        input{
-            margin-left: 12em;
-            margin-bottom: 3em;
-            padding: 0.5em;
-            width: 15vw;
-            border-color: #201337;
-            background-color: transparent;
-            border-top: transparent;
-            border-left: transparent;
-            border-right: transparent;
-        }
-        .toCalc{
-            font-weight: bolder;
-            border-color: #201337;
-            padding-top: 0.1em;
-            margin-left: 12.5em;
-            cursor: pointer;
-        }
-
-        .underCalc{
-            margin-top: 3em;
-            margin-left: 8.2em;
-            border-style: solid;
-            border-width: 1.2px;
-            width: 20vw;
-
-        }
-        .showResult{
-            translate: 9em 3em 0em;
-        }
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1em;
+    .leftside {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      input {
+        margin-bottom: 3em;
+        padding: 0.5em;
+        width: 15vw;
+        border-color: #201337;
+        background-color: transparent;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+      }
+      .showResult{
+        margin-left: -10em;
+        font-weight: 600;
+        font-size: large;
+      }
     }
+    .rightside{
+        width: 50%;
+    }
+  }
 }
-body{
-    background-color: #201337;
+body {
+  background-color: #201337;
 }
